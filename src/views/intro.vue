@@ -24,7 +24,7 @@
           <div class="shape-2"></div>
           <div class="pic">
             <img
-              src="@/assets/myPic_1.png"
+              src="@/assets/myPic_1.svg"
               alt="photo"
               class="shape-3"
             />

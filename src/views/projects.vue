@@ -22,34 +22,28 @@
 export default {
   data() {
     return {
-      cards: [
-        require("@/assets/foster.png"),
-        require("@/assets/aurea.png"),
-        require("@/assets/heaven_mountains.png"),
-        require("@/assets/flappy_bird.png"),
-      ],
       project_cards: [
         {
-          image: require("@/assets/foster.png"),
+          image: require("@/assets/foster.svg"),
           title: "Foster",
           description:
             "The aim of this app is to help those who have ADHD. This app helps them to regulate their sleep cycles, take their medications on time, maintain a task planner, perform relaxation techniques like yoga and meditation, and perform exercises.",
           link:"https://github.com/adrikagupta/code-camp_codeplay",
         },
         {
-            image:require("@/assets/aurea.png"),
+            image:require("@/assets/aurea.svg"),
             title:"Aurea",
             description:"Get to know about the Golden Ratio in detail with applications from real life. Identify the Golden Ratio in an image and use the Golden ratio calculator. Participate in or check out the public forum where people post Golden Ratio images",
             link:"https://github.com/Prash2002/aurea"
         },
         {
-            image:require("@/assets/heaven_mountains.png"),
+            image:require("@/assets/heaven_mountains.svg"),
             title:"Heaven Mountains",
             description:"It's a website design for an adventure travel operator specialising in inspirational cultural tours, treks and expeditions to various mountains.",
             link:"https://github.com/adrikagupta/Heaven_Mountains"
         },
         {
-            image:require("@/assets/flappy_bird.png"),
+            image:require("@/assets/flappy_bird.svg"),
             title:"Flappy Bird",
             description:"A Flappy Bird clone using Javascript and HTML.The player controls a bird, attempting to fly between columns of green pipes without hitting them.",
             link:"https://github.com/adrikagupta/Flappy_Bird"
