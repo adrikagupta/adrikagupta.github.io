@@ -17,7 +17,7 @@
         <div class="greeting">
           <p>Hey! I'm</p>
           <p class="name">ADRIKA GUPTA</p>
-          <p class="profession">Flutter Developer | Frontend Web Developer</p>
+          <p class="profession">Flutter Developer  <span> Frontend Web Developer</span></p>
         </div>
         <div class="pic-design">
           <div class="shape-1"></div>
@@ -150,6 +150,12 @@ nav {
   align-items: flex-end;
   height: 10%;
 }
+span{
+  border-left: 1px solid #fff;
+  padding-left:10px;
+  margin-left:5px;
+}
+
 nav ul {
   list-style: none;
   text-align: center;
@@ -229,7 +235,7 @@ nav p {
 .profession{
   color:white;
   letter-spacing: 1.5px;
-  font-size:17px
+  font-size:17px;
 }
 .shape-1 {
   border: 1px solid #fff;
