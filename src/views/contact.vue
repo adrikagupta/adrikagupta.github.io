@@ -1,0 +1,102 @@
+<template>
+  <div id="contact">
+      <footer>
+    <p>Have a question or want to work together? Feel free to contact me!</p>
+    <div class="socialLinks">
+      <a :href="social.link" target="_blank" class="social" v-for="(social,index) in social_links" :key="index">
+        <svg viewBox="0 0 24 24">
+          <path
+            :fill="social.color"
+            :d="social.path"
+          />
+        </svg>
+      </a>
+    </div>
+    </footer>
+  </div>
+</template>
+
+<script>
+export default {
+    name:'Contact',
+    data(){
+        return{
+            social_links:[
+                {
+                    color: '#DD2A7B',
+                    link: 'https://www.instagram.com/adrikaa.22/',
+                    path: 'M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z'
+                },
+                {
+                    color: '#DB3236',
+                    link: 'mailto:adrikagupta22@gmail.com',
+                    path: 'M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z'
+                },
+                {
+                    color: '#0E76A8',
+                    link: 'https://www.linkedin.com/in/adrika-gupta-228001194/',
+                    path: 'M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z'
+                }
+            ]
+        }
+    }
+};
+</script>
+
+<style scoped>
+#contact {
+  background-color: #222
+}
+footer{
+    padding: 30px 0;
+  max-width: 80%;
+  margin: 0 auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center
+}
+footer p{
+    color:#ddd;
+    text-align: center;
+    font-size: 18px;
+}
+.socialLinks{
+    display: flex;
+}
+.social{
+    width: 50px;
+    height: 50px;
+    background-color:#ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50px;
+    border:none;
+    margin: 0 10px;
+}
+svg{
+  width:30px;
+  height:30px;
+}
+.social:hover{
+    background-color: rgba(0, 0, 0, 0.377)
+}
+@media screen and (max-width: 1280px) {
+  footer{
+    max-width: 90%
+  }
+}
+@media  screen and (max-width: 640px){
+  footer p{
+    font-size: 15px
+  }
+  .social{
+    width:40px;
+    height: 40px;
+  }
+  svg{
+    width:25px;
+    height:25px;
+  }
+}
+</style>
