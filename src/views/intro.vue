@@ -239,14 +239,12 @@ nav p {
 }
 .shape-1 {
   border: 1px solid #fff;
-  opacity: 60%;
   border-radius: 51% 49% 35% 65% / 62% 52% 48% 38%;
   width: 80%;
   height: 100%;
 }
 .shape-2 {
   border: 1px solid #fff;
-  opacity: 60%;
   border-radius: 65% 35% 67% 33% / 35% 52% 48% 65%;
   width: 80%;
   height: 100%;
